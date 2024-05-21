@@ -1,0 +1,39 @@
+{
+  "TopBarAccount": {
+    "PolicyName": "שם המדיניות: תיק 50% -פרטיים ועדה",
+    "InvestmentPolicy": "מדיניות השקעה: תיק 50% פרטיים ועדה",
+    "NameAccount": "חשבון100 *לא לגעת בבעלי חשבון נרקיס**-",
+    "AccountValue": "₪1,394,625",
+    "Date": "14/12/2023"
+  },
+  "MyAccount": {
+    "AccountComposition": "הרכב תיק",
+    "DetailsOfHoldings": "פירוט אחזקות",
+    "AnnualReturn": "תשואה שנתית",
+    "DetailsOfReturns": "פירוט תשואות"
+  },
+  "inquiries": {
+    "messagesPageTitle": "הודעות"
+  },
+  "documents": {
+    "titleForm": "מערכת הטפסים המקוונים של פסגות",
+    "doneTitle": "סיום"
+  },
+  "personalDetails": {
+    "firstNameField": "בעל",
+    "lastNameField": "חשבון100",
+    "IdField": "999125834",
+    "bankField": "פסגות",
+    "branchField": "1",
+    "accountField": "0000050098",
+    "ID1": "007767437",
+    "ID2": "999061112",
+    "ID3": "999066756",
+    "ID4": "999111388",
+    "ID5": "999125834",
+    "ID6": "999897614"
+
+  }
+
+
+}

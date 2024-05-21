@@ -1,0 +1,267 @@
+{
+  "testFrame1": {
+    "frameAmountInShekel": "5,000",
+    "percentageFrameFromDeal": "50",
+    "dealAmountBefore": "10,000",
+    "dealAmountAfter": "5,000"
+  },
+  "testFrame2": {
+    "dealStatus": "פונטנציאלית",
+    "creditType": "  ישיר",
+    "creditPurpose": "  רכישת שליטה",
+    "dealPosition": "  משקיע עוגן"
+  },
+  "testFrame3": {
+    "mainBorrower": "חזי הראל",
+    "BorrowerID": "אחר 52534 -",
+    "BorrowerPhone": "054-5865412 (סלולר)",
+    "BorrowerEmail": ""
+  },
+  "testFrame4": {
+    "interestField": "5",
+    "variableInterest": "הלוואה10041 | 10041",
+    "MHMField": "5",
+    "linkage": "הלוואה10 | 10",
+    "spaciousField": "5",
+    "TLVField": "5"
+  },
+  "testFrame5": {
+    "BICodeFromList": "  18 - הלוואה ממונפת ריקורס לא קונסורציום"
+  },
+  "testFrame6": {
+    "TatAfik": "אג\"ח להמרה לא סחיר | 2800",
+    "Afik": "אג\"ח להמרה לא סחיר",
+    "Manpik": "590 Fifth Holding LLC | 23895",
+    "Anaf": "Energy | 42",
+    "IssuingCountry": "ACADIAN",
+    "tradingCountry": "ארזים",
+    "exposureState": "אלוני חץ",
+    "GeographicArea": "  אסיה",
+    "Borsa": "בדיקה | 1",
+    "Konzrn": "בזק | 10",
+    "Property": "הלוואה1012602 | 1012602",
+    "baseAssetMultiplier": "5",
+    "coinExposure": " | 20029",
+    "TypeForRiskManagement": "  אג\"ח להמרה",
+    "AttachmentType": "אג\"ח לא סחיר לא  להמרה-אחר | 28"
+  },
+  "testFrame7": {
+    "borrowerName": "חזי הראל",
+    "serialNumber": "2",
+    "contact": "ראשי",
+    "borrowerPhone": "054-5865412 (סלולר)",
+    "borrowerEmail": ""
+  },
+  "testFrame8": {
+    "SafeDetail": "בדיקה",
+    "safeType": "  אנרגיה"
+  },
+  "testFrame9": {
+    "contactName": "דרך ארץ",
+    "serialNumber": "1003",
+    "contactPhone": "",
+    "contactEmail": "",
+    "contactJob": "  מנהל כספים"
+  },
+  "testFrame10": {
+    "documentsTab": "מסמכים"
+  },
+  "testFrame11": {
+    "dealEventTab": "אירועים"
+  },
+  "testFrame12": {
+    "offerDataTab": "נתוני הצעה"
+  },
+  "testFrame13": {
+    "frameTitle": "מסגרת"
+  },
+  "testDeal1": {
+    "MainBorrowerField": "חזי הראל"
+  },
+  "testDeal2": {
+    "offerDataPageTitle": "נתוני הצעה"
+  },
+  "testDeal3": {
+    "afik": "אג\"ח להמרה לא סחיר"
+  },
+  "testDeal4": {
+    "AdditionalConditionsTab": "תנאים נוספים"
+  },
+  "testDeal5": {
+    "CollateralAndGuarantorsTab": "בטחונות וערבים"
+  },
+  "testDeal6": {
+    "contactTab": "אנשי קשר"
+  },
+  "testDeal7": {
+    "documentsTab": "מסמכים"
+  },
+  "testDeal8": {
+    "dealEventTab": "אירועים"
+  },
+  "testDeal9": {
+    "dealTitle": "עסקה"
+  },
+  "testLoan1": {
+    "coinField": "ILS",
+    "calculatedFieldsLoanTab": "5,000"
+  },
+  "testLoan2": {
+    "TitleLoan": "הלוואה",
+    "LoanCoin": "ILS",
+    "LoanPercentageFromFrame": "40",
+    "RemainingFrameBefore": "5,000",
+    "RemainingFrameAfter": "3,000",
+    "DealStatus": "פונטנציאלית",
+    "CreditType": "  ישיר",
+    "CreditPurpose": "  רכישת שליטה",
+    "DealPosition": "  משקיע עוגן",
+    "MainBorrower": "חזי הראל",
+    "BorrowerID": "אחר 52534 -",
+    "BorrowerPhone": "054-5865412 (סלולר)",
+    "BorrowerEmail": "",
+    "InterestField": "5",
+    "VariableInterest": "הלוואה10041 | 10041",
+    "MHMField": "5",
+    "Linkage": "הלוואה10 | 10",
+    "SpaciousField": "5",
+    "TLVField": "5"
+  },
+  "testLoan3": {
+    "TatAfik": "אג\"ח להמרה לא סחיר | 2800",
+    "Afik": "אג\"ח להמרה לא סחיר",
+    "Manpik": "590 Fifth Holding LLC | 23895",
+    "Anaf": "Energy | 42",
+    "IssuingCountry": "ACADIAN",
+    "TradingCountry": "ארזים",
+    "ExposureState": "אלוני חץ",
+    "GeographicArea": "  אסיה",
+    "Borsa": "בדיקה | 1",
+    "Konzrn": "בזק | 10",
+    "Property": "הלוואה1012602 | 1012602",
+    "BaseAssetMultiplier": "5",
+    "CoinExposure": " | 20029",
+    "TypeForRiskManagement": "  אג\"ח להמרה",
+    "AttachmentType": "אג\"ח לא סחיר לא  להמרה-אחר | 28"
+  },
+  "LoanTest4": {
+    "BorrowerName": "חזי הראל",
+    "SerialNumber": "2",
+    "Contact": "ראשי",
+    "BorrowerPhone": "054-5865412 (סלולר)",
+    "BorrowerEmail": ""
+  },
+  "LoanTest5": {
+    "SafeDetail": "בדיקה",
+    "SafeType": "אג\"ח סחיר"
+  },
+  "LoanTest6": {
+    "ContactName": "דרך ארץ",
+    "SerialNumber": "1003",
+    "ContactPhone": "",
+    "ContactEmail": "",
+    "ContactJob": "  מנהל כספים"
+  },
+  "LoanTest7": {
+    "documentsTab": "מסמכים"
+  },
+  "LoanTest8": {
+    "dealEventTab": "אירועים"
+  },
+  "LoanTest9": {
+    "offerDataTab": "נתוני הצעה"
+  },
+  "BPPrivateDetails1": {
+    "firsName": "שם פרטי",
+    "secondName": "שם שני",
+    "lastName": "שם משפחה",
+    "nickName": "כינוי",
+    "fatherName": "שם האב"
+
+  },
+  "BPPrivateDetails2": {
+    "genderMale": "  זכר",
+    "ID": "  ת\"ז",
+    "stateOfIssue": "ישראל",
+    "countryOfBirth": "ישראל",
+    "generalComments": "בדיקה"
+  },
+  "BPPContactInfo": {
+    "district": "השרון",
+    "city": "נתניה",
+    "street": "הזית",
+    "houseNum": "4",
+    "entrance": "1",
+    "apartment": "1",
+    "registeredMailAddress": "456123",
+    "postalCode": "40599",
+    "addressDescription": "פרטי",
+    "phoneNum": "098911772",
+    "phoneDescription": "אישי",
+    "webAddress": "www.danel.com",
+    "webName": "Danel",
+    "email": "or@gmail.com",
+    "emailDescription": "אישי"
+  },
+  "BPPContactInfo1": {
+    "stateIsrael": "ישראל",
+    "geographicArea": "  אסיה",
+    "typePhone": "  סלולר"
+  },
+  "BPPContactInfo2": {
+    "district2": "השרון",
+    "city2": "נתניה",
+    "street2": "הזית",
+    "houseNum2": "4",
+    "entrance2": "1",
+    "apartment2": "1",
+    "registeredMailAddress2": "456123",
+    "postalCode2": "40599",
+    "addressDescription2": "פרטי"
+  },
+  "BPPContactInfo3": {
+    "stateIsrael2": "ישראל",
+    "geographicArea2": "  ישראל"
+  },
+  "BPCompanyInfo": {
+    "companyName": "Danel",
+    "formOfIncorporation": "  חברה",
+    "texCorporationNum": "100",
+    "countryToTaxField": "ישראל",
+    "BnNumber":   "  ח\"פ",
+    "stateOfIssueField": "ישראל",
+    "dateOfIssue": "01/01/1990",
+    "generalComments": "בדיקה"
+  },
+  "BPCompanyContactInformation": {
+    "stateIsrael": "ישראל",
+    "geographicArea": "  ישראל",
+    "district": "השרון",
+    "city": "נתניה",
+    "street": "הזית",
+    "houseNum": "4",
+    "entrance": "1",
+    "apartment": "1",
+    "registeredMailAddress": "456123",
+    "postalCode": "40599",
+    "addressDescription": "פרטי",
+    "phoneType": "  סלולר",
+    "phoneNum": "0508903336",
+    "phoneDescription": "פרטי",
+    "website": "www.danel.con",
+    "websiteName": "Danel",
+    "email": "danel@gmail.com",
+    "emailDescription": "עסקי"
+  },
+  "BPCompanyContacts": {
+    "serialNumber": "4",
+    "contactName": "ניקולה יוקיץ",
+    "ID": "רישיון נהיגה 1234567 - ישראל",
+    "phoneNumber": "fff - 05222222 (סלולר)",
+    "email": "fff@gmail.com",
+    "role": "  מנהל כספים"
+  }
+
+
+
+}
