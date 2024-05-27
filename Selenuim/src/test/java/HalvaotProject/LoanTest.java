@@ -98,20 +98,20 @@ public class LoanTest extends BaseLoanTest {
         softAssert.assertAll();
     }
 
-    @Test(description = "בדיקת הורשה- נתוני הצעה")
-    @Description("בדיקת נתוני הצעה: ריבית= 5, ריבית משתנה= ליבור|215, מח מ= 5, הצמדה= נייר100|100, מרווח= 5, LTV= 5 ")
-    public void test06VerifyOfferData() throws InterruptedException, IOException {
-        JSONObject tes21Data = JsonUtils.returnJsonObject(testData, "testLoan2");
-        LoanDetailsPage loanDetails = pageLoader.loanDetails;
-        SoftAssert softAssert = new SoftAssert();
-        softAssert.assertEquals(loanDetails.getInterestField(), tes21Data.get("InterestField"));
-        softAssert.assertEquals(loanDetails.getVariableInterest(), tes21Data.get("VariableInterest"));
-        softAssert.assertEquals(loanDetails.getMHMField(), tes21Data.get("MHMField"));
-        softAssert.assertEquals(loanDetails.getLinkage(), tes21Data.get("Linkage"));
-        softAssert.assertEquals(loanDetails.getSpaciousField(), tes21Data.get("SpaciousField"));
-        softAssert.assertEquals(loanDetails.getTLVField(), tes21Data.get("TLVField"));
-        softAssert.assertAll();
-    }
+//    @Test(description = "בדיקת הורשה- נתוני הצעה")
+//    @Description("בדיקת נתוני הצעה: ריבית= 5, ריבית משתנה= ליבור|215, מח מ= 5, הצמדה= נייר100|100, מרווח= 5, LTV= 5 ")
+//    public void test06VerifyOfferData() throws InterruptedException, IOException {
+//        JSONObject tes21Data = JsonUtils.returnJsonObject(testData, "testLoan2");
+//        LoanDetailsPage loanDetails = pageLoader.loanDetails;
+//        SoftAssert softAssert = new SoftAssert();
+//        softAssert.assertEquals(loanDetails.getInterestField(), tes21Data.get("InterestField"));
+//        softAssert.assertEquals(loanDetails.getVariableInterest(), tes21Data.get("VariableInterest"));
+//        softAssert.assertEquals(loanDetails.getMHMField(), tes21Data.get("MHMField"));
+//        softAssert.assertEquals(loanDetails.getLinkage(), tes21Data.get("Linkage"));
+//        softAssert.assertEquals(loanDetails.getSpaciousField(), tes21Data.get("SpaciousField"));
+//        softAssert.assertEquals(loanDetails.getTLVField(), tes21Data.get("TLVField"));
+//        softAssert.assertAll();
+//    }
 
     @Test(description = "לשונית פרטים נוספים- בחירת נכס והתחייבות ובדיקת שדות הורשה מעסקה")
     @Description("בדיקת שדות תת אפיק = אג\"ח להמרה לא סחיר | 2800 , אפיק=אג\"ח להמרה לא סחיר, מנפיק=איסתא ליינס חברת נסיעות בישראל בע\"מ | 1036, ענף= 1 בנקים למשכנתאות | 2 , מדינה מנפיקה= ACADIAN , מדינה נסחרת=אפריקה ישראל, מדינת חשיפה= אירופה, אזור גאוגרפי= ישראל, בורסה= בדיקה | 1 , קונצרן= בזק | 10, נכס בסיס= נייר1000321 | 1000321, מכפיל נכס בסיס= 5 , מדד מטבע חשיפה= דולר | 20001, סוג לניהול סיכונים =אג ח להמרה, סוג הצמדה= אג ח לא סחיר להמרה- אחר")

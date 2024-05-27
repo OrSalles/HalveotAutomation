@@ -4,6 +4,9 @@ import HalvotPages.BP.*;
 import HalvotPages.Deal.*;
 import HalvotPages.Frame.*;
 import HalvotPages.Loan.*;
+import HalvotPages.LoanConsolidation.EventsInTheLifeOfALoanTabPage;
+import HalvotPages.LoanConsolidation.Step1_SelectionOfTheBorrowerAndTheDateOfOperationPage;
+import HalvotPages.LoanConsolidation.Step2_SelectLoansForConsolidationPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
@@ -44,6 +47,10 @@ public class PageLoader {
     public BPCompanyDetailsPage BPCompanyDetails;
     public BPCompanyContactInformationPage BPContactInfo;
     public  BPCompanyContactsPage BPCompanyContacts;
+    public EventsInTheLifeOfALoanTabPage EventsInTheLifeOfALoan;
+    public Step1_SelectionOfTheBorrowerAndTheDateOfOperationPage Step1_SelectionOfTheBorrowerAndTheDateOfOperation;
+    public Step2_SelectLoansForConsolidationPage Step2_SelectLoansForConsolidation;
+
 
 
     public PageLoader(WebDriver driver){
@@ -83,6 +90,9 @@ public class PageLoader {
         BPCompanyDetails = PageFactory.initElements(driver, BPCompanyDetailsPage.class);
         BPContactInfo = PageFactory.initElements(driver,BPCompanyContactInformationPage.class);
         BPCompanyContacts = PageFactory.initElements(driver,BPCompanyContactsPage.class);
+        EventsInTheLifeOfALoan = PageFactory.initElements(driver, EventsInTheLifeOfALoanTabPage.class);
+        Step1_SelectionOfTheBorrowerAndTheDateOfOperation = PageFactory.initElements(driver, Step1_SelectionOfTheBorrowerAndTheDateOfOperationPage.class);
+        Step2_SelectLoansForConsolidation = PageFactory.initElements(driver, Step2_SelectLoansForConsolidationPage.class);
 
     }
 

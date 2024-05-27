@@ -260,6 +260,11 @@
     "phoneNumber": "fff - 05222222 (סלולר)",
     "email": "fff@gmail.com",
     "role": "  מנהל כספים"
+  },
+  "Step1_SelectionOfTheBorrowerAndTheDateOfOperation": {
+    "mainBorrower": "חזי הראל - (אחר 52534)",
+    "status": "פוטנציאלי",
+    "commentBox": "test"
   }
 
 
