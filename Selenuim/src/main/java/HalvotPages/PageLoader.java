@@ -1,12 +1,11 @@
 package HalvotPages;
 
 import HalvotPages.BP.*;
+import HalvotPages.CRM.CRMTablePage;
 import HalvotPages.Deal.*;
 import HalvotPages.Frame.*;
 import HalvotPages.Loan.*;
-import HalvotPages.LoanConsolidation.EventsInTheLifeOfALoanTabPage;
-import HalvotPages.LoanConsolidation.Step1_SelectionOfTheBorrowerAndTheDateOfOperationPage;
-import HalvotPages.LoanConsolidation.Step2_SelectLoansForConsolidationPage;
+import HalvotPages.LoanConsolidation.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
@@ -48,8 +47,13 @@ public class PageLoader {
     public BPCompanyContactInformationPage BPContactInfo;
     public  BPCompanyContactsPage BPCompanyContacts;
     public EventsInTheLifeOfALoanTabPage EventsInTheLifeOfALoan;
+    public LoansTabPage LoansTab;
     public Step1_SelectionOfTheBorrowerAndTheDateOfOperationPage Step1_SelectionOfTheBorrowerAndTheDateOfOperation;
     public Step2_SelectLoansForConsolidationPage Step2_SelectLoansForConsolidation;
+    public Step3_CreateNewLoanPage Step3_CreateNewLoan;
+    public Step4_CreatingMovementsAndPerformingTheUnionPage Step4_CreatingMovementsAndPerformingTheUnion;
+    public CRMTablePage CRMTable;
+
 
 
 
@@ -93,6 +97,10 @@ public class PageLoader {
         EventsInTheLifeOfALoan = PageFactory.initElements(driver, EventsInTheLifeOfALoanTabPage.class);
         Step1_SelectionOfTheBorrowerAndTheDateOfOperation = PageFactory.initElements(driver, Step1_SelectionOfTheBorrowerAndTheDateOfOperationPage.class);
         Step2_SelectLoansForConsolidation = PageFactory.initElements(driver, Step2_SelectLoansForConsolidationPage.class);
+        Step3_CreateNewLoan = PageFactory.initElements(driver,Step3_CreateNewLoanPage.class);
+        Step4_CreatingMovementsAndPerformingTheUnion = PageFactory.initElements(driver, Step4_CreatingMovementsAndPerformingTheUnionPage.class);
+        LoansTab = PageFactory.initElements(driver,LoansTabPage.class);
+        CRMTable= PageFactory.initElements(driver, CRMTablePage.class);
 
     }
 

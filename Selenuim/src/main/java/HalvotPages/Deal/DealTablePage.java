@@ -26,7 +26,7 @@ public class DealTablePage extends BasePage {
     public WebElement alert;
 //    @FindBy(xpath = "(//table[@id='grid_1500417120_0_content_table']/tbody/tr)[last()]")
 //    public WebElement lastRow;
-    @FindBy(xpath = "(//table[@id='grid_695134662_0_content_table']/tbody/tr)[last()]")
+    @FindBy(xpath = "(//table[@id='grid_2095683801_0_content_table']/tbody/tr)[last()]")
     public WebElement lastRow;
 
     public String getAlert(){

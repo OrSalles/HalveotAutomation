@@ -33,14 +33,24 @@ public class DealOfferDataPage extends BasePage {
     //ריבית משתנה
     @FindBy(xpath = "//td[contains(@aria-label,'is template cell column header ריבית משתנה (בתוספת)')]//div//div//div[@class='position-absolute bg-white right-0 px-2']")
     public WebElement variableInterestButton;
-    @FindBy(xpath = "//body[1]/div[1]/app-root[1]/div[1]/ng-component[1]/login-guard[1]/div[1]/div[1]/div[2]/div[1]/div[3]/dashboard[1]/div[1]/div[1]/div[1]/div[1]/app-idash-widget[1]/div[1]/ng-component[1]/div[1]/div[3]/div[1]/compound-grid-new-entity-form[1]/div[1]/div[1]/onboarding[1]/div[1]/div[2]/div[1]/div[1]/onboarding-section[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/onboarding-field[1]/div[1]/div[1]/div[1]/grid-field[1]/div[1]/div[2]/compound-grid-ejs-grid[1]/div[1]/div[2]/ejs-grid[1]/div[3]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/div[1]/onboarding-field[1]/div[1]/div[1]/div[1]/autocomplete-field[1]/div[3]/div[1]/compound-grid-ejs-grid[1]/div[1]/div[1]/ejs-grid[1]/div[3]/div[1]/table[1]/tbody[1]/tr[1]/td[1]")
+    @FindBy(id="grid_859403890_1_content_table")
+    public WebElement tableVariableInterest;
+    @FindBy(xpath = ".//tr[0]/td[0]")
+    public WebElement firstValue;
+    @FindBy(xpath = "//*[@id=\"grid_859403890_3_content_table\"]/tbody/tr[1]")
     public WebElement ChosenVariableInterest;
+    @FindBy(xpath = "//*[@id=\"grid_1950035919_4_content_table\"]/tbody/tr/td")
+    public WebElement variableInterest;
+    @FindBy(xpath = "//*[@data-fielddataentrytype='19']//input")
+    public WebElement variableInterestField;
     //מח"מ
     @FindBy(xpath = "//onboarding-field/*/*/*/numeric-input/div/div/input")
     public WebElement MHMField;
     //הצמדה
     @FindBy(xpath = "//td[contains(@aria-label,'is template cell column header הצמדה')]//i[@class='text-dark fa fa-list']")
     public WebElement linkageButton;
+    @FindBy(xpath = "//*[@data-fielddataentrytype='19']//input")
+    public WebElement linkageField;
     @FindBy(xpath = "//body[1]/div[1]/app-root[1]/div[1]/ng-component[1]/login-guard[1]/div[1]/div[1]/div[2]/div[1]/div[3]/dashboard[1]/div[1]/div[1]/div[1]/div[1]/app-idash-widget[1]/div[1]/ng-component[1]/div[1]/div[3]/div[1]/compound-grid-new-entity-form[1]/div[1]/div[1]/onboarding[1]/div[1]/div[2]/div[1]/div[1]/onboarding-section[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/onboarding-field[1]/div[1]/div[1]/div[1]/grid-field[1]/div[1]/div[2]/compound-grid-ejs-grid[1]/div[1]/div[2]/ejs-grid[1]/div[3]/div[1]/table[1]/tbody[1]/tr[1]/td[5]/div[1]/onboarding-field[1]/div[1]/div[1]/div[1]/autocomplete-field[1]/div[3]/div[1]/compound-grid-ejs-grid[1]/div[1]/div[1]/ejs-grid[1]/div[3]/div[1]/table[1]/tbody[1]/tr[1]/td[1]")
     public WebElement chosenLinkage;
     //מרווח
@@ -63,16 +73,49 @@ public class DealOfferDataPage extends BasePage {
         TLVField.click();
         formArray[6].findElement(By.xpath("./*/*/*/numeric-input/div/div/input")).sendKeys(fieldsDealOffers);
     }
+    public void ChosenVariableInterest() throws InterruptedException {
+        variableInterestField.sendKeys(" | 697");
+
+        List<WebElement> elements = driver.findElements(By.cssSelector(".e-rowcell.e-templatecell.cursor-pointer.e-lastrowcell")); // Replace with appropriate locator
+
+        // Check if the list is not empty
+        if (!elements.isEmpty()) {
+            // Choose the first element from the list
+            WebElement firstElement = elements.get(0);
+
+            // Interact with the first element, for example, click it
+            firstElement.click();
+        } else {
+            System.out.println("The list is empty.");
+        }
+    }
+    public void  chosenLinkage() throws InterruptedException {
+        linkageField.sendKeys("| 320000001");
+
+        List<WebElement> elements = driver.findElements(By.cssSelector(".e-rowcell.e-templatecell.cursor-pointer.e-lastrowcell")); // Replace with appropriate locator
+
+        // Check if the list is not empty
+        if (!elements.isEmpty()) {
+            // Choose the first element from the list
+            WebElement firstElement = elements.get(0);
+
+            // Interact with the first element, for example, click it
+            firstElement.click();
+        } else {
+            System.out.println("The list is empty.");
+        }
+    }
+
 
     public void choseFromListsOfferData() throws InterruptedException {
         Thread.sleep(1000);
         variableInterestButton.click();
-        Thread.sleep(1000);
-        ChosenVariableInterest.click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
+        ChosenVariableInterest();
+        Thread.sleep(2000);
         linkageButton.click();
         Thread.sleep(2000);
-        chosenLinkage.click();
+        chosenLinkage();
     }
 
     public void goToOfferDataTabAndFillingOutTheFields() throws InterruptedException {

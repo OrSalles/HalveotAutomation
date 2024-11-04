@@ -15,7 +15,7 @@ public class LoanEventPage extends BasePage {
     }
     String date = "10/12/2023";
 
-    @FindBy(xpath = "//popover-form-modal/div/onboarding/div/div/onboarding-tabs/div/*/*/*/*/*/ul/li/a/span/b[contains(text(),'אירועים')]")
+    @FindBy(xpath = "(//b[contains(text(),'אירועים')])[3]")
     public WebElement dealEventTab;
     @FindBy(xpath = "(//i[@class='fa fa-plus'])[2]")
     public WebElement eventButton;
@@ -23,6 +23,8 @@ public class LoanEventPage extends BasePage {
     public WebElement chosenTypeEvent;
     @FindBy(xpath = "(//td[contains(@aria-label,'is template cell column header בטיפול')])[135]")
     public WebElement chosenCare;
+    @FindBy(xpath = "//*[@data-fielddataentrytype='19']//input")
+    public WebElement careField;
     @FindBy(xpath = "//select[@aria-label='סטאטוס']")
     public WebElement eventStatus;
     @FindBy(xpath = "//select[@aria-label='עדיפות']")
@@ -40,7 +42,19 @@ public class LoanEventPage extends BasePage {
         formArray[0].findElement(By.xpath("./*/*/*/a")).click();
         chosenTypeEvent.click();
         formArray[1].findElement(By.xpath("./*/*/*/a")).click();
-        chosenCare.click();
+        careField.sendKeys("דנאל");
+        List<WebElement> elements = driver.findElements(By.cssSelector(".e-rowcell.e-templatecell.cursor-pointer.is-mandatory.e-lastrowcell")); // Replace with appropriate locator
+
+        // Check if the list is not empty
+        if (!elements.isEmpty()) {
+            // Choose the first element from the list
+            WebElement firstElement = elements.get(0);
+
+            // Interact with the first element, for example, click it
+            firstElement.click();
+        } else {
+            System.out.println("The list is empty.");
+        };
     }
 
     public void eventDropdown() {

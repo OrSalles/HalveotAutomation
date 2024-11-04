@@ -17,33 +17,33 @@ public class LoanExtraDetailsPage extends BasePage {
     public LoanExtraDetailsPage(WebDriver driver){
         super(driver);
     }
-    @FindBy(xpath = "//popover-form-modal/div/onboarding/div/div/onboarding-tabs/div/*/*/*/*/*/ul/li/a/span/b[contains(text(),'פרטים נוספים')]")
+    @FindBy(xpath = "//div[@class='formContainer']//onboarding//div[@class='d-flex flex-column position-absolute ng-star-inserted']//div//b[contains(text(),'פרטים נוספים')]")
     public WebElement ExtraDetailsTab;
     @FindBy(xpath = "//input[@title='אג\"ח להמרה לא סחיר | 2800']")
     public WebElement TatAfik;
     @FindBy(xpath = "//span[@title='אג\"ח להמרה לא סחיר']")
     public WebElement Afik;
-    @FindBy(xpath = "//onboarding-field-readonly[@title='23895']//*//span")
+    @FindBy(xpath = "//onboarding-field-readonly[@title='1036']//*//span")
     public WebElement Manpik;
     @FindBy(xpath = "//input[@title='Energy | 42']")
     public WebElement Anaf;
     @FindBy(xpath = "//input[@title='ACADIAN']")
     public WebElement IssuingCountry;
-    @FindBy(xpath = "//input[@title='ארזים']")
+    @FindBy(xpath = "//input[@title='אלביט']")
     public WebElement TradingCountry;
-    @FindBy(xpath = "//input[@title='אלוני חץ']")
+    @FindBy(xpath = "//input[@title='א. לוי']")
     public WebElement ExposureState;
     @FindBy(xpath = "//option[@value='10000']")
     public WebElement GeographicArea;
     @FindBy(xpath = "//input[@title='בדיקה | 1']")
     public WebElement Borsa;
-    @FindBy(xpath = "//input[@title='בזק | 10']")
+    @FindBy(xpath = "//input[@title='GOLDMAN SACHS | 80']")
     public WebElement Konzrn;
-    @FindBy(xpath = "//input[@title='הלוואה1012602 | 1012602']")
+    @FindBy(xpath = "//input[@title='1אלקטרה נדלן אג | 1094051']")
     public WebElement Property;
     @FindBy(xpath = "//input[@title='5']")
     public WebElement BaseAssetMultiplier;
-    @FindBy(xpath = "//input[@title=' | 20029']")
+    @FindBy(xpath = "//input[@title=' | 397']")
     public WebElement CoinExposure;
     @FindBy(xpath = "//option[@value='23']")
     public WebElement TypeForRiskManagement;

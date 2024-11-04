@@ -60,21 +60,21 @@ public class LoanDetailsPage extends BasePage {
     public WebElement CreditPurpose;
     @FindBy(xpath = "//option[contains(text(),'משקיע עוגן')]")
     public WebElement DealPosition;
-    @FindBy(xpath = "//span[@title='חזי הראל']")
+    @FindBy(xpath = "//span[@title='לווה 4741']")
     public WebElement MainBorrower;
-    @FindBy(xpath = "//div[@title='אחר 52534 - ']")
+    @FindBy(xpath = "//div[@title='ח\"פ 54648854 - ']")
     public WebElement BorrowerID;
-    @FindBy(xpath = "//div[@title='054-5865412 (סלולר)']")
+    @FindBy(xpath = "//div[@title='0525865412 (סלולר)']")
     public WebElement BorrowerPhone;
     @FindBy(xpath = "//*[@data-fieldid='6243']//*[@class='mb-0 form-control border disabled px-1 ng-star-inserted']")
     public WebElement BorrowerEmail;
     @FindBy(xpath = "(//onboarding-field-readonly[@title='5'])[1]")
     public WebElement InterestField;
-    @FindBy(xpath = "//div[@title='הלוואה10041 | 10041']")
+    @FindBy(xpath = "//div[@title=' | 697']")
     public WebElement VariableInterest;
     @FindBy(xpath = "(//div[@title='5'][normalize-space()='5'])[2]")
     public WebElement MHMField;
-    @FindBy(xpath = "//div[@title='נייר10 | 10']")
+    @FindBy(xpath = "//div[@title=' | 320000001']")
     public WebElement Linkage;
     @FindBy(xpath = "(//div[@title='5'][normalize-space()='5'])[3]")
     public WebElement SpaciousField;
@@ -86,7 +86,7 @@ public class LoanDetailsPage extends BasePage {
         List<WebElement> formFields = driver.findElements(By.tagName("autocomplete-field"));
         WebElement[] formArray = formFields.stream().toArray(WebElement[]::new);
         Thread.sleep(1000);
-        formArray[0].findElement(By.xpath("./*/*/input")).sendKeys("הלוואה" + firstValue);
+        formArray[0].findElement(By.xpath("./*/*/input")).sendKeys(firstValue);
         Thread.sleep(1000);
     }
 

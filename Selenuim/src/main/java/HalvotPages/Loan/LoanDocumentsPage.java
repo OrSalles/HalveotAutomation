@@ -15,7 +15,7 @@ public class LoanDocumentsPage extends BasePage {
     }
     String path = "X:\\פריוריטי\\Or Baron\\1.docx";
     String date = "10/12/2023";
-    @FindBy(xpath = "//popover-form-modal/div/onboarding/div/div/onboarding-tabs/div/*/*/*/*/*/ul/li/a/span/b[contains(text(),'מסמכים')]")
+    @FindBy(xpath = "(//b[contains(text(),'מסמכים')])[2]")
     public WebElement documentsTab;
     @FindBy(xpath = "//i[@data-addtype='InGrid']")
     public WebElement addDocumentsButton;

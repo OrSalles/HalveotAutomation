@@ -21,7 +21,7 @@ public class FrameTablePage extends BasePage {
 
     public void clickLastRow() {
         // Find the table element
-        WebElement table = driver.findElement(By.id("grid_803765790_0_content_table"));
+        WebElement table = driver.findElement(By.id("grid_831933141_0_content_table"));
 
         // Find all rows in the table
         java.util.List<WebElement> rows = table.findElements(By.tagName("tr"));

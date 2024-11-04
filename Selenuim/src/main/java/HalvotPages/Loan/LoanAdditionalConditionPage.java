@@ -12,7 +12,7 @@ public class LoanAdditionalConditionPage extends BasePage {
     public LoanAdditionalConditionPage(WebDriver driver){
         super(driver);
     }
-    @FindBy(xpath = "//popover-form-modal/div/onboarding/div/div/onboarding-tabs/div/*/*/*/*/*/ul/li/a/span/b[contains(text(),'תנאים נוספים')]")
+    @FindBy(xpath = "(//b[contains(text(),'תנאים נוספים')])[2]")
     public WebElement AdditionalConditionTab;
 
     public void goToAdditionalConditionTab(){

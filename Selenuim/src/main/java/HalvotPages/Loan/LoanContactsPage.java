@@ -9,7 +9,7 @@ public class LoanContactsPage extends BasePage {
     public LoanContactsPage(WebDriver driver){
         super(driver);
     }
-    @FindBy(xpath = "//popover-form-modal/div/onboarding/div/div/onboarding-tabs/div/*/*/*/*/*/ul/li/a/span/b[contains(text(),'אנשי קשר')]")
+    @FindBy(xpath = "(//b[contains(text(),'אנשי קשר')])[2]")
     public WebElement contactsTab;
     @FindBy(xpath = "//td[contains(@aria-label,'is template cell column header מספר סידורי')]")
     public WebElement SerialNumber;

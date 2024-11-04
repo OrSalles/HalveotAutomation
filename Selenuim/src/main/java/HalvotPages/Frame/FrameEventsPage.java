@@ -24,6 +24,8 @@ public class FrameEventsPage extends BasePage {
     public WebElement chosenTypeEvent;
     @FindBy(xpath = "(//td[contains(@aria-label,'is template cell column header בטיפול')])[135]")
     public WebElement chosenCare;
+    @FindBy(xpath = "//*[@data-fielddataentrytype='19']//input")
+    public WebElement careField;
     @FindBy(xpath = "//select[@aria-label='סטאטוס']")
     public WebElement eventStatus;
     @FindBy(xpath = "//select[@aria-label='עדיפות']")
@@ -35,14 +37,35 @@ public class FrameEventsPage extends BasePage {
         return dealEventTab.getText();
     }
 
-    public void eventTypeAndCare() {
-        List<WebElement> formFields = driver.findElements(By.tagName("autocomplete-field"));
-        WebElement[] formArray = formFields.stream().toArray(WebElement[]::new);
-        formArray[0].findElement(By.xpath("./*/*/*/a")).click();
-        chosenTypeEvent.click();
-        formArray[1].findElement(By.xpath("./*/*/*/a")).click();
-        chosenCare.click();
-    }
+//    public void eventTypeAndCare() {
+//        List<WebElement> formFields = driver.findElements(By.tagName("autocomplete-field"));
+//        WebElement[] formArray = formFields.stream().toArray(WebElement[]::new);
+//        formArray[0].findElement(By.xpath("./*/*/*/a")).click();
+//        chosenTypeEvent.click();
+//        formArray[1].findElement(By.xpath("./*/*/*/a")).click();
+//        chosenCare.click();
+//    }
+        public void eventTypeAndCare() throws InterruptedException {
+            List<WebElement> formFields = driver.findElements(By.tagName("autocomplete-field"));
+            WebElement[] formArray = formFields.stream().toArray(WebElement[]::new);
+            formArray[0].findElement(By.xpath("./*/*/*/a")).click();
+            chosenTypeEvent.click();
+            formArray[1].findElement(By.xpath("./*/*/*/a")).click();
+            careField.sendKeys("דנאל");
+            List<WebElement> elements = driver.findElements(By.cssSelector(".e-rowcell.e-templatecell.cursor-pointer.is-mandatory.e-lastrowcell")); // Replace with appropriate locator
+
+            // Check if the list is not empty
+            if (!elements.isEmpty()) {
+                // Choose the first element from the list
+                WebElement firstElement = elements.get(0);
+
+                // Interact with the first element, for example, click it
+                firstElement.click();
+            } else {
+                System.out.println("The list is empty.");
+            }
+
+        }
 
     public void eventDropdown() {
         Select dropdown = new Select(eventStatus);

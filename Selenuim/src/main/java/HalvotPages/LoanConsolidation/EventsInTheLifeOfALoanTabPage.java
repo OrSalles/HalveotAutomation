@@ -21,11 +21,17 @@ public class EventsInTheLifeOfALoanTabPage extends BasePage {
     public WebElement commentBox;
     @FindBy(xpath = "//a[contains(text(),'אישור - שלב הבא')]")
     public WebElement nextStepButton;
+    @FindBy(xpath = "//div[@title='איחוד הלוואות']")
+    public WebElement eventType;
 
 
-    public void addNewEvent(){
+    public void addNewEvent() throws InterruptedException {
         eventsInTheLifeOfALoanTab.click();
         addEventButton.click();
+        Thread.sleep(2000);
+    }
+    public String getEventType(){
+        return eventType.getText();
     }
 }
 

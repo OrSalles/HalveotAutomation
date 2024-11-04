@@ -1,8 +1,8 @@
 {
   "urlHalvaot": {
-    "website": "http://danel-db:8094/?Ticket=368b68af-f118-4bee-aa9c-c6cf0663d3fa"
+    "website": "http://danel-qa01:8094/?Ticket=42ea7364-5996-4ea9-9fe6-a77f5620be8e"
   },
   "urlAPI": {
-    "API": "http://danel-db:8093/api/"
+    "API": "http://danel-qa01:8093/api/"
   }
 }

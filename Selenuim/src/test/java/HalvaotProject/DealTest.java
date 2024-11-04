@@ -19,7 +19,8 @@ import static Utils.RandomID.generateRandomID;
 public class DealTest extends BaseDealTest {
 
     String NameOfDeal = "עסקה אוטומציה";
-    String amount = "10,000";
+    String amount = "10,000\n" +
+            " ";
     String path ="X:\\פריוריטי\\Or Baron\\1.docx";
     String baseName = "עסקה אוטומציה";
    String randomID = generateRandomID();
@@ -128,7 +129,7 @@ public class DealTest extends BaseDealTest {
     }
     @Test(description = "בדיקת לשונית אירועים")
     @Description("בדיקת לשונית אירועים והקמת אירוע חדש")
-    public void test09eventsPage() throws IOException {
+    public void test09eventsPage() throws IOException, InterruptedException {
         JSONObject test8Data= JsonUtils.returnJsonObject(testData, "testDeal8");
         pageLoader = new PageLoader(driver);
         SoftAssert softAssert = new SoftAssert();

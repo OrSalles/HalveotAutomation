@@ -9,15 +9,15 @@ public class LoanBorrowerPage extends BasePage {
     public LoanBorrowerPage(WebDriver driver){
         super(driver);
     }
-    @FindBy(xpath = "//popover-form-modal/div/onboarding/div/div/onboarding-tabs/div/*/*/*/*/*/ul/li/a/span/b[contains(text(),'לווים')]")
+    @FindBy(xpath = "(//b[contains(text(),'לווים')])[3]")
     public WebElement borrowerTab;
     @FindBy(xpath = "//*[@data-fieldid='6401']")
     public WebElement BorrowerName;
-    @FindBy(xpath = "//onboarding-field-readonly/*/span/*[@title='2']")
+    @FindBy(xpath = "//onboarding-field-readonly/*/span/*[@title='1440']")
     public WebElement SerialNumber;
     @FindBy(xpath = "//option[@value='0']")
     public WebElement Contact;
-    @FindBy(xpath = "//option[contains(text(),'054-5865412 (סלולר)')]")
+    @FindBy(xpath = "//option[contains(text(),'0525865412 (סלולר)')]")
     public WebElement BorrowerPhone;
     @FindBy(xpath = "(//option[@value='undefined'])[1]")
     public WebElement BorrowerEmail;

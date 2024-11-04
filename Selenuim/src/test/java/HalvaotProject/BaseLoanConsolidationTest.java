@@ -1,6 +1,8 @@
 package HalvaotProject;
 
+import HalvotPages.PageLoader;
 import Utils.JsonUtils;
+import Utils.ReportUtils;
 import com.google.common.util.concurrent.Uninterruptibles;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.json.JSONObject;
@@ -9,20 +11,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
-import HalvotPages.PageLoader;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import Utils.ReportUtils;
-
-
-public class BaseFrameTest {
-
+public class BaseLoanConsolidationTest {
     protected WebDriver driver;
     protected PageLoader pageLoader;
 
@@ -43,10 +39,10 @@ public class BaseFrameTest {
         driver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
         driver.navigate().refresh();
         pageLoader = new PageLoader(driver);
-        pageLoader.table.lastRow.click();
-        Thread.sleep(1000);
-        pageLoader.Frame.frameTab.click();
-        pageLoader.Frame.plusButton.click();
+        Thread.sleep(2000);
+        pageLoader.listOfFrames.frameButton.click();
+        Thread.sleep(2000);
+        pageLoader.listOfFrames.clickLastRow();
     }
 
 

@@ -27,7 +27,7 @@ public class FrameExtraDetailsPage extends BasePage {
         super(driver);
     }
 
-    @FindBy(xpath = "//div[@class='formContainer']//onboarding//div[@class='d-flex flex-column position-absolute ng-star-inserted']//div//b[contains(text(),'פרטים נוספים')]")
+        @FindBy(xpath = "//div[@class='formContainer']//onboarding//div[@class='d-flex flex-column position-absolute ng-star-inserted']//div//b[contains(text(),'פרטים נוספים')]")
     public WebElement extraDetailsTab;
     @FindBy(xpath = "(//a[@href='javascript:;'])[44]")
     public WebElement PropertyNumberButton;
@@ -37,27 +37,27 @@ public class FrameExtraDetailsPage extends BasePage {
     public WebElement TatAfik;
     @FindBy(xpath = "//span[@title='אג\"ח להמרה לא סחיר']")
     public WebElement Afik;
-    @FindBy(xpath = "//onboarding-field-readonly[@title='23895']//*//span")
+    @FindBy(xpath = "//onboarding-field-readonly[@title='1036']//*//span")
     public WebElement Manpik;
     @FindBy(xpath = "//input[@title='Energy | 42']")
     public WebElement Anaf;
     @FindBy(xpath = "//input[@title='ACADIAN']")
     public WebElement IssuingCountry;
-    @FindBy(xpath = "//input[@title='ארזים']")
+    @FindBy(xpath = "//input[@title='אלביט']")
     public WebElement tradingCountry;
-    @FindBy(xpath = "//input[@title='אלוני חץ']")
+    @FindBy(xpath = "//input[@title='א. לוי']")
     public WebElement exposureState;
     @FindBy(xpath = "//option[@value='10000']")
     public WebElement GeographicArea;
     @FindBy(xpath = "//input[@title='בדיקה | 1']")
     public WebElement Borsa;
-    @FindBy(xpath = "//input[@title='בזק | 10']")
+    @FindBy(xpath = "//input[@title='GOLDMAN SACHS | 80']")
     public WebElement Konzrn;
-    @FindBy(xpath = "//input[@title='הלוואה1012602 | 1012602']")
+    @FindBy(xpath = "//input[@title='1אלקטרה נדלן אג | 1094051']")
     public WebElement Property;
     @FindBy(xpath = "//input[@title='5']")
     public WebElement baseAssetMultiplier;
-    @FindBy(xpath = "//input[@title=' | 20029']")
+    @FindBy(xpath = "//input[@title=' | 397']")
     public WebElement coinExposure;
     @FindBy(xpath = "//option[@value='23']")
     public WebElement TypeForRiskManagement;
@@ -65,16 +65,23 @@ public class FrameExtraDetailsPage extends BasePage {
     public WebElement AttachmentType;
     @FindBy(xpath = "//table[@class='table table-hover mb-0 ng-star-inserted']/tbody/tr/td")
     public WebElement firstObligation;
+    @FindBy(xpath = "(//i[@class='text-dark fa fa-list'])[1]")
+    public WebElement assetButton;
+    @FindBy(xpath = "//input[@data-fielddataentrytype='19']")
+    public WebElement assetField;
 
     public void goToExtraDetailsTab(){
         extraDetailsTab.click();
     }
 
     public void assets(String firstValue) throws InterruptedException, IOException, CsvException {
+      //  assetButton.click();
+      //  assetField.sendKeys(firstValue);
         List<WebElement> formFields = driver.findElements(By.tagName("autocomplete-field"));
         WebElement[] formArray = formFields.stream().toArray(WebElement[]::new);
         Thread.sleep(1000);
-        formArray[0].findElement(By.xpath("./*/*/input")).sendKeys("הלוואה" + firstValue);
+        formArray[0].findElement(By.xpath("./*/*/input")).sendKeys(firstValue);
+        Thread.sleep(1000);
         clickTheFirstAsset();
 
     }
@@ -99,7 +106,7 @@ public class FrameExtraDetailsPage extends BasePage {
         List<WebElement> formFields = driver.findElements(By.tagName("autocomplete-field"));
         WebElement[] formArray = formFields.stream().toArray(WebElement[]::new);
         Thread.sleep(1000);
-        formArray[1].findElement(By.xpath("./*/*/input")).sendKeys("הלוואה" + firstValue);
+        formArray[1].findElement(By.xpath("./*/*/input")).sendKeys( firstValue);
         Thread.sleep(1000);
         //firstObligation.click();
     }

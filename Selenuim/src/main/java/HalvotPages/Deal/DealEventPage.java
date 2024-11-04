@@ -23,8 +23,13 @@ public class DealEventPage extends BasePage {
     public WebElement eventButton;
     @FindBy(xpath = "(//td[@aria-label=' is template cell column header סוג האירוע'])[6]")
     public WebElement chosenTypeEvent;
-    @FindBy(xpath = "(//td[contains(@aria-label,'is template cell column header בטיפול')])[135]")
+    @FindBy(xpath = "//*[@data-fielddataentrytype='19']//input")
+    public WebElement careField;
+    @FindBy(xpath = "//tr[@aria-rowindex='0']//td[@aria-label='is template cell column header בטיפול']//*[@title='דנאל דנאלית | 114']")
     public WebElement chosenCare;
+
+//    @FindBy(xpath = "(//td[contains(@aria-label,'is template cell column header בטיפול')])[135]")
+//    public WebElement chosenCare;
     @FindBy(xpath = "//select[@aria-label='סטאטוס']")
     public WebElement eventStatus;
     @FindBy(xpath = "//select[@aria-label='עדיפות']")
@@ -32,13 +37,26 @@ public class DealEventPage extends BasePage {
     @FindBy(xpath = "(//a[@class='btn btn-warning nav-link form-footer-link p-3 ml-2 mr-2'][contains(text(),'שמירה')])[1]")
     public WebElement saveEvent;
 
-    public void eventTypeAndCare() {
+    public void eventTypeAndCare() throws InterruptedException {
         List<WebElement> formFields = driver.findElements(By.tagName("autocomplete-field"));
         WebElement[] formArray = formFields.stream().toArray(WebElement[]::new);
         formArray[0].findElement(By.xpath("./*/*/*/a")).click();
         chosenTypeEvent.click();
         formArray[1].findElement(By.xpath("./*/*/*/a")).click();
-        chosenCare.click();
+        careField.sendKeys("דנאל");
+        List<WebElement> elements = driver.findElements(By.cssSelector(".e-rowcell.e-templatecell.cursor-pointer.is-mandatory.e-lastrowcell")); // Replace with appropriate locator
+
+        // Check if the list is not empty
+        if (!elements.isEmpty()) {
+            // Choose the first element from the list
+            WebElement firstElement = elements.get(0);
+
+            // Interact with the first element, for example, click it
+            firstElement.click();
+        } else {
+            System.out.println("The list is empty.");
+        }
+
     }
 
     public void eventDropdown() {
@@ -56,7 +74,7 @@ public class DealEventPage extends BasePage {
 
     }
 
-    public void goToEventsAndOpenNewEvent() {
+    public void goToEventsAndOpenNewEvent() throws InterruptedException {
         dealEventTab.click();
         eventButton.click();
         eventTypeAndCare();
@@ -65,8 +83,11 @@ public class DealEventPage extends BasePage {
         saveEvent.click();
 
     }
+
+
     public String getDealEventTab(){
         return dealEventTab.getText();
     }
 }
+
 

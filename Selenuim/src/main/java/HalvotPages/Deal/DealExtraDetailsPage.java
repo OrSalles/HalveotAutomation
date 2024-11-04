@@ -24,7 +24,7 @@ public class DealExtraDetailsPage extends BasePage {
     public WebElement tatAfikButton;
     @FindBy(xpath = "(//td[contains(@aria-label,'is template cell column header תת אפיק')])[1]")
     public WebElement chosenTatAfik;
-    @FindBy(xpath = "//input[@type='number']")
+    @FindBy(xpath = "//div[@data-fieldid='6368']/*/*/*/*/*/input")
     public WebElement baseAssetMultiplier;
     @FindBy(xpath = "//span[@title='אג\"ח להמרה לא סחיר']")
     public WebElement afik;
@@ -64,6 +64,8 @@ public class DealExtraDetailsPage extends BasePage {
     public WebElement nehesBasis;
     @FindBy(xpath = "(//td[contains(@aria-label,'is template cell column header נכס בסיס')])[18]")
     public WebElement chosenNehesBasis;
+    @FindBy(xpath = "//input[@title='0']")
+    public WebElement multiplierNehesBasis;
     @FindBy(xpath = "(//i[@class='text-dark fa fa-list'])[9]")
     public WebElement madadMatbeaHasifa;
     @FindBy(xpath = "(//td[contains(@aria-label,'is template cell column header מדד מטבע חשיפה')])[1]")

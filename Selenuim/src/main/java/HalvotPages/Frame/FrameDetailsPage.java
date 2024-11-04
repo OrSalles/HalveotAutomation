@@ -50,21 +50,21 @@ public class FrameDetailsPage extends BasePage {
     public WebElement creditPurpose;
     @FindBy(xpath = "//option[contains(text(),'משקיע עוגן')]")
     public WebElement dealPosition;
-    @FindBy(xpath = "//onboarding-field-readonly/*/span/*/span[@title='חזי הראל']")
+    @FindBy(xpath = "//onboarding-field-readonly/*/span/*/span[@title='לווה 4741']")
     public WebElement mainBorrower;
-    @FindBy(xpath = "//div[@title='אחר 52534 - ']")
+    @FindBy(xpath = "//div[@title='ח\"פ 54648854 - ']")
     public WebElement BorrowerID;
-    @FindBy(xpath = "//div[@title='054-5865412 (סלולר)']")
+    @FindBy(xpath = "//div[@title='0525865412 (סלולר)']")
     public WebElement BorrowerPhone;
     @FindBy(xpath = "//*[@data-fieldid='6243']//*[@class='mb-0 form-control border disabled px-1 ng-star-inserted']")
     public WebElement BorrowerEmail;
     @FindBy(xpath = "(//div[@title='5'][normalize-space()='5'])[1]")
     public WebElement interestField;
-    @FindBy(xpath = "//div[@title='הלוואה10041 | 10041']")
+    @FindBy(xpath = "//div[@title=' | 697']")
     public WebElement variableInterest;
     @FindBy(xpath = "(//div[@title='5'][normalize-space()='5'])[2]")
     public WebElement MHMField;
-    @FindBy(xpath = "//div[@title='הלוואה10 | 10']")
+    @FindBy(xpath = "//div[@title=' | 320000001']")
     public WebElement linkage;
     @FindBy(xpath = "(//div[@title='5'][normalize-space()='5'])[3]")
     public WebElement spaciousField;

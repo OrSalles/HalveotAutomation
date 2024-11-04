@@ -16,9 +16,9 @@ public class Step1_SelectionOfTheBorrowerAndTheDateOfOperationPage extends BaseP
     }
     String testData = "TestData.json";
     String urlData = "urlData.json";
-    @FindBy(xpath = "//div[@title='חזי הראל - (אחר 52534)']")
+    @FindBy(xpath = "//div[@title='לווה 4741 - (ח\"פ 54648854)']")
     public WebElement mainBorrower;
-    @FindBy(xpath = "//div[@title='פוטנציאלי']")
+    @FindBy(xpath = "//div[@title='Potential']")
     public WebElement status;
     @FindBy(xpath = "//option[@value='2'][contains(text(),'העברה מחשבון לחשבון')]")
     public WebElement detailsCode_NISWithdrawal;

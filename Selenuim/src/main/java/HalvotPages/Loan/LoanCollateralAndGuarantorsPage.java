@@ -9,7 +9,7 @@ public class LoanCollateralAndGuarantorsPage extends BasePage {
     public LoanCollateralAndGuarantorsPage(WebDriver driver){
         super(driver);
     }
-    @FindBy(xpath = "//popover-form-modal/div/onboarding/div/div/onboarding-tabs/div/*/*/*/*/*/ul/li/a/span/b[contains(text(),'בטחונות וערבים')]")
+    @FindBy(xpath = "(//b[contains(text(),'בטחונות וערבים')])[2]")
     public WebElement CollateralAndGuarantorsTab;
     @FindBy(xpath = "//div[@class='ng-star-inserted']//span[@title='בדיקה'][contains(text(),'בדיקה')]")
     public WebElement SafeDetail;

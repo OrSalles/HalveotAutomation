@@ -39,9 +39,9 @@ public class BaseLoanTest {
         driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
         driver.navigate().refresh();
         pageLoader = new PageLoader(driver);
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         pageLoader.listOfFrames.frameButton.click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         pageLoader.listOfFrames.clickLastRow();
         pageLoader.loanTab.loanTab.click();
         pageLoader.loanTab.clickOnThePlusButton();

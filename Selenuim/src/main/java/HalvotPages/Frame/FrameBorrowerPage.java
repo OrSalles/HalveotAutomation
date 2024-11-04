@@ -14,7 +14,7 @@ public class FrameBorrowerPage extends BasePage {
     public WebElement borrowerTab;
     @FindBy(xpath = "//*[@data-fieldid='6401']")
     public WebElement borrowerName;
-    @FindBy(xpath = "//onboarding-field-readonly[@title='2']//div//span")
+    @FindBy(xpath = "//onboarding-field-readonly[@title='1440']//div//span")
     public WebElement serialNumber;
     @FindBy(xpath = "//option[@value='0']")
     public WebElement contact;

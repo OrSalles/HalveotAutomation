@@ -12,16 +12,16 @@
     "dealPosition": "  משקיע עוגן"
   },
   "testFrame3": {
-    "mainBorrower": "חזי הראל",
-    "BorrowerID": "אחר 52534 -",
-    "BorrowerPhone": "054-5865412 (סלולר)",
+    "mainBorrower": "לווה 4741",
+    "BorrowerID": "ח\"פ 54648854 -",
+    "BorrowerPhone": "0525865412 (סלולר)",
     "BorrowerEmail": ""
   },
   "testFrame4": {
     "interestField": "5",
-    "variableInterest": "הלוואה10041 | 10041",
+    "variableInterest": "| 697",
     "MHMField": "5",
-    "linkage": "הלוואה10 | 10",
+    "linkage": "| 320000001",
     "spaciousField": "5",
     "TLVField": "5"
   },
@@ -31,34 +31,34 @@
   "testFrame6": {
     "TatAfik": "אג\"ח להמרה לא סחיר | 2800",
     "Afik": "אג\"ח להמרה לא סחיר",
-    "Manpik": "590 Fifth Holding LLC | 23895",
+    "Manpik": "איסתא ליינס חברת נסיעות בישראל בע\"מ | 1036",
     "Anaf": "Energy | 42",
     "IssuingCountry": "ACADIAN",
-    "tradingCountry": "ארזים",
-    "exposureState": "אלוני חץ",
-    "GeographicArea": "  אסיה",
+    "tradingCountry": "אלביט",
+    "exposureState": "א. לוי",
+    "GeographicArea": "  ישראל",
     "Borsa": "בדיקה | 1",
-    "Konzrn": "בזק | 10",
-    "Property": "הלוואה1012602 | 1012602",
+    "Konzrn": "GOLDMAN SACHS | 80",
+    "Property": "1אלקטרה נדלן אג | 1094051",
     "baseAssetMultiplier": "5",
-    "coinExposure": " | 20029",
+    "coinExposure": " | 397",
     "TypeForRiskManagement": "  אג\"ח להמרה",
     "AttachmentType": "אג\"ח לא סחיר לא  להמרה-אחר | 28"
   },
   "testFrame7": {
-    "borrowerName": "חזי הראל",
-    "serialNumber": "2",
+    "borrowerName": "לווה 4741",
+    "serialNumber": "1440",
     "contact": "ראשי",
-    "borrowerPhone": "054-5865412 (סלולר)",
+    "borrowerPhone": "0525865412 (סלולר)",
     "borrowerEmail": ""
   },
   "testFrame8": {
     "SafeDetail": "בדיקה",
-    "safeType": "  אנרגיה"
+    "safeType": "  אג\"ח סחיר"
   },
   "testFrame9": {
-    "contactName": "דרך ארץ",
-    "serialNumber": "1003",
+    "contactName": "לווה 11",
+    "serialNumber": "4",
     "contactPhone": "",
     "contactEmail": "",
     "contactJob": "  מנהל כספים"
@@ -76,7 +76,7 @@
     "frameTitle": "מסגרת"
   },
   "testDeal1": {
-    "MainBorrowerField": "חזי הראל"
+    "MainBorrowerField": "לווה 4741"
   },
   "testDeal2": {
     "offerDataPageTitle": "נתוני הצעה"
@@ -116,39 +116,39 @@
     "CreditType": "  ישיר",
     "CreditPurpose": "  רכישת שליטה",
     "DealPosition": "  משקיע עוגן",
-    "MainBorrower": "חזי הראל",
-    "BorrowerID": "אחר 52534 -",
-    "BorrowerPhone": "054-5865412 (סלולר)",
+    "MainBorrower": "לווה 4741",
+    "BorrowerID": "ח\"פ 54648854 -",
+    "BorrowerPhone": "0525865412 (סלולר)",
     "BorrowerEmail": "",
     "InterestField": "5",
-    "VariableInterest": "הלוואה10041 | 10041",
+    "VariableInterest": "| 697",
     "MHMField": "5",
-    "Linkage": "הלוואה10 | 10",
+    "Linkage": "| 320000001",
     "SpaciousField": "5",
     "TLVField": "5"
   },
   "testLoan3": {
     "TatAfik": "אג\"ח להמרה לא סחיר | 2800",
     "Afik": "אג\"ח להמרה לא סחיר",
-    "Manpik": "590 Fifth Holding LLC | 23895",
+    "Manpik": "איסתא ליינס חברת נסיעות בישראל בע\"מ | 1036",
     "Anaf": "Energy | 42",
     "IssuingCountry": "ACADIAN",
-    "TradingCountry": "ארזים",
-    "ExposureState": "אלוני חץ",
-    "GeographicArea": "  אסיה",
+    "TradingCountry": "אלביט",
+    "ExposureState": "א. לוי",
+    "GeographicArea": "  ישראל",
     "Borsa": "בדיקה | 1",
-    "Konzrn": "בזק | 10",
-    "Property": "הלוואה1012602 | 1012602",
+    "Konzrn": "GOLDMAN SACHS | 80",
+    "Property": "1אלקטרה נדלן אג | 1094051",
     "BaseAssetMultiplier": "5",
-    "CoinExposure": " | 20029",
+    "CoinExposure": " | 397",
     "TypeForRiskManagement": "  אג\"ח להמרה",
     "AttachmentType": "אג\"ח לא סחיר לא  להמרה-אחר | 28"
   },
   "LoanTest4": {
-    "BorrowerName": "חזי הראל",
-    "SerialNumber": "2",
+    "BorrowerName": "לווה 4741",
+    "SerialNumber": "1440",
     "Contact": "ראשי",
-    "BorrowerPhone": "054-5865412 (סלולר)",
+    "BorrowerPhone": "0525865412 (סלולר)",
     "BorrowerEmail": ""
   },
   "LoanTest5": {
@@ -156,8 +156,8 @@
     "SafeType": "אג\"ח סחיר"
   },
   "LoanTest6": {
-    "ContactName": "דרך ארץ",
-    "SerialNumber": "1003",
+    "ContactName": "לווה 11",
+    "SerialNumber": "4",
     "ContactPhone": "",
     "ContactEmail": "",
     "ContactJob": "  מנהל כספים"
@@ -261,10 +261,24 @@
     "email": "fff@gmail.com",
     "role": "  מנהל כספים"
   },
+  "LoanTab": {
+    "activityStatus": "פעיל - מאוחד"
+  },
+  "EventInTheLifeOfALoanTab": {
+    "eventType": "איחוד הלוואות"
+  },
   "Step1_SelectionOfTheBorrowerAndTheDateOfOperation": {
-    "mainBorrower": "חזי הראל - (אחר 52534)",
-    "status": "פוטנציאלי",
+    "mainBorrower": "לווה 4741 - (ח\"פ 54648854)",
+    "status": "Potential",
     "commentBox": "test"
+  },
+  "Step4_CreatingMovementsAndPerformingTheUnion": {
+    "newLoanTitle": "הלוואה חדשה שתיווצר",
+    "actionsToBeOccur": "פעולות שצפויות להיווצר"
+  },
+  "CRMTable": {
+    "CRMTableTitle": "Inbox"
+
   }
 
 

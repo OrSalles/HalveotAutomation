@@ -195,6 +195,7 @@ public class FrameTest extends BaseFrameTest {
             SoftAssert softAssert = new SoftAssert();
             FrameCollateralAndGuarantorsPage collateralAndGuarantors= pageLoader.collateralAndGuarantors;
             collateralAndGuarantors.goToCollateralAndGuarantorsTab();
+            Thread.sleep(1000);
             softAssert.assertEquals(collateralAndGuarantors.getSafeDetail(), tes8Data.get("SafeDetail"));
             softAssert.assertEquals(collateralAndGuarantors.getSafeType(), tes8Data.get("safeType"));
         }

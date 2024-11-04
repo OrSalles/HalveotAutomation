@@ -1,6 +1,7 @@
 package HalvotPages.Deal;
 
 import HalvotPages.BasePage;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -41,7 +42,7 @@ public class DealDetailsPage extends BasePage {
     @FindBy(xpath = DealAmountXpath)
     public WebElement DealAmount;
 
-    @FindBy(xpath = "//body[1]/div[1]/app-root[1]/div[1]/ng-component[1]/login-guard[1]/div[1]/div[1]/div[2]/div[1]/div[3]/dashboard[1]/div[1]/div[1]/div[1]/div[1]/app-idash-widget[1]/div[1]/ng-component[1]/div[1]/div[3]/div[1]/compound-grid-new-entity-form[1]/div[1]/div[1]/onboarding[1]/div[1]/div[2]/div[1]/div[1]/onboarding-section[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[2]/onboarding-field[1]/div[1]/div[1]/onboarding-field-readonly[1]/div[1]/span[1]/div[1]")
+    @FindBy(xpath = "//*[@data-fieldid='6848']")
     public WebElement TotalAmountDeal;
 
     @FindBy(xpath = "//select[@aria-label='סוג האשראי']")
@@ -67,13 +68,13 @@ public class DealDetailsPage extends BasePage {
     @FindBy(xpath = "//div[@class='position-absolute bg-white right-0 px-2']")
     public WebElement borrowerGridButton;
 
-    @FindBy(xpath = "(//td[contains(@aria-label,'is template cell column header מספר טלפון')])[2]")
+    @FindBy(xpath = "(//td[@aria-label=' is template cell column header מספר טלפון'])[1440]")
     public WebElement ChosenBorrower;
 
     @FindBy(xpath = "//b[contains(text(),'פרטי עסקה')]")
     public WebElement dealDetailsTab;
 
-    @FindBy(xpath = "//span[@title='חזי הראל']")
+    @FindBy(xpath = "//span[@title='לווה 4741']")
     public WebElement MainBorrowerField;
     @FindBy(xpath = "//input[@title='<span class=\"text-watermark\"></span>']")
     public WebElement borrowerPercent;
@@ -116,6 +117,7 @@ public class DealDetailsPage extends BasePage {
         saveDeal.click();
     }
     public void fillingOutDealDetailsFields() throws InterruptedException {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
         generateRandomID();
         Thread.sleep(1000);
         DealName.sendKeys(nameWithRandomID);
@@ -123,6 +125,7 @@ public class DealDetailsPage extends BasePage {
         DealFirstPart(amount,date);
         Thread.sleep(2000);
         DealSecondPart(explanation);
+        js.executeScript("arguments[0].scrollIntoView(true);", DealAmount);;
     }
     public void GoToBorrowerTabAndFillingOutTheFields(){
         borrowerButton.click();
